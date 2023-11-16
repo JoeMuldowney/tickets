@@ -63,7 +63,7 @@ At the outset of this project, I faced the challenge of having limited prior kno
      - Enhances communication efficiency between users and the ticketing system, reducing the need for manual follow-ups.
 
 
-# Dependencies
+# Usage
 
 To run you will need to downlaod Xammp with PHP version 8.0.28, apache, and MySQL [here](https://www.apachefriends.org/download.html).  Configure apache in xampp control panel to allow pdo connections.  
 Download Microsift Access Database Engine 2016 Redistrutable [here](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
