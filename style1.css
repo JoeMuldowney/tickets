@@ -1,0 +1,196 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.flexing{
+	display: flex;
+}
+.page-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-list-names {
+	display: inline-grid;
+    grid-template-columns: repeat(10, 1fr); /* Ten columns */
+    max-width: 1850px;
+    width: 95%;
+	padding-top: 5px;
+	font-size: 20px;
+	
+}
+.container-list {
+	
+	width: 95%;
+    height: 550px; /* Adjust the height as needed */
+    overflow: auto;
+
+}
+.content:hover{
+	background-color: yellow;
+}
+.grid-item-list {
+    border: 1px solid #ddd;
+    text-align: center;
+	cursor: pointer;
+}
+.content{
+	display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Ten columns */
+    max-width: 1850px;
+    width: 100%;
+	font-size: 17px;
+
+}
+.grid-item-titles {
+    border: 1px solid #ddd;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.dash{
+	top: 50px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+	border-radius: 10px;
+	width:100%;
+}
+.buttons-list{
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+	border-radius: 5px;
+	width:100%;
+
+}
+.buttons-list input{
+	margin: 25px;
+}
+.search{
+	
+}
+
+.buttons{
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+	border-radius: 5px;
+	
+}
+.buttons input{
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 2px;
+	margin: 10px;
+}
+.container {
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	max-height: 2000px;
+	height: 75%;
+	max-width: 1850px;
+	width: 100%;  
+	position: relative;
+}
+.thumbnail {
+    height: 150px;
+    padding: 5px;
+	width: 150px;
+}
+.thumbnail img{
+	height: 100px;
+	width: 100px; 
+	border-radius: 10px;	
+}
+.upload{
+	font-size: 20px;
+    max-width: 396px;	
+	max-height: 396px;
+	margin-left: 10px;
+}
+.upload input[type="file"]{
+	font-size: 20px;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+.image{
+	margin: 25px;
+	border-radius: 5px;
+}
+.image img{
+	border-radius: 5px;
+}
+.logo {
+	width: 100%;
+	height: 80px;
+	text-align: right;	
+}
+.header{
+	height: 80px;
+	margin-left: 20px; 
+	width: 650px;
+}
+.logo img{
+	margin-top: 24.20px;
+	margin-bottom: 19.20px;
+	margin-right: 150px;
+}
+.right{	
+	width: 100%;
+	text-align: center;
+	margin-right: 25px;
+}
+.inputs{
+	margin-top: 18.72px;
+	margin-left: 20px;
+	padding: 5px;
+}
+.inputs select{
+	font-size: 17px;
+	border-radius: 5px;
+}
+.right select{
+	font-size: 20px;
+	margin: 25px;
+	border-radius: 5px;
+}
+.textbox{
+	padding: 5px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	max-width: 1100px;
+	max-height: 400px;
+	resize: none;
+	
+}
+.textbox textarea{
+	font-size: 17px;
+	border-radius: 5px;
+	resize: none;
+}
+.MIS{
+	padding: 5px;
+	margin-left: 20px;
+}
+.MIS textarea{
+	font-size: 17px;
+	border-radius: 5px;
+	margin-top: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
