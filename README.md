@@ -84,18 +84,15 @@ Prerequisites
   - Import the SQL file `ticket.sql` into the "ticket" database.
 
 ## MySQL User and Privileges Setup:
-- Open MySQL Command Line or MySQL Workbench.
-- Run the following queries to create a new user ('mis' in this example) and grant all privileges to a specific database ('your_database'). Replace `'Mysql123'` with the desired password:
+- Open MySQL Command Line or MySQL Workbench.  
+  - Create a new MySQL user
+     - CREATE USER 'mis'@'localhost' IDENTIFIED BY 'Mysql123';
 
-  
-  -- Create a new MySQL user
-  CREATE USER 'mis'@'localhost' IDENTIFIED BY 'Mysql123';
-
-  -- Grant all privileges to the user for a specific database
-  GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
+  - Grant all privileges to the user for a specific database
+     - GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
 
 ## Move Access Database File:
-Move the file users.accdb to the folder C:\xampp\cgi-bin.
+- Move the file users.accdb to the folder C:\xampp\cgi-bin.
 
 ## User Credentials:
 - User Accounts:
