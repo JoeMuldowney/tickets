@@ -1,7 +1,7 @@
 <?php
 
 $serverName = "localhost";
-$userName = "MIS";
+$userName = "mis";
 $password = "Mysql123";
 $dbName = "ticket";
 

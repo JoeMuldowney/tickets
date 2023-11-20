@@ -53,7 +53,7 @@ try{
 
 	$stmt->bind_param("ssssssss", $dateOpen, $user, $Priority, $Location, $Category, $Status, $Description, $newFileName);
 	$stmt->execute();	
-	
+/*	
 	require_once "emailquery.php";
 	
 	$emailquery = "SELECT First_Name, Email FROM Staff WHERE Login_ID = :user";	
@@ -91,15 +91,19 @@ if (mail($to, $subject, $message, $headers)) {
 }
 	
 	
-	$redirectUrl = "ticket_list.php?access=$user";
-    header("Location: $redirectUrl");	
+
 	
 	
 	
+
+*/
+$redirectUrl = "ticket_list.php?access=$user";
+header("Location: $redirectUrl");	
 }catch (PDOException $e){
 	die("Query failed: " . $e->getMessage());
 }
 }
+
 else{
 
 $Id = $_POST['ticket_num'];
@@ -138,7 +142,7 @@ $stmt1->execute();
     $stmt1->fetch();
 
 $stmt1->close();	
-
+/*
 require_once "emailquery.php";
 	
 	$emailquery = "SELECT First_Name, Email FROM Staff WHERE Login_ID = :getUser";	
@@ -208,14 +212,16 @@ Senior Connection Center";
     echo 'Error sending email.';
 }	
 }	
-	$redirectUrl = "ticket_list.php?access=$user";
-    header("Location: $redirectUrl");
 
 
-}catch (PDOException $e){
-		die("Query failed: " . $e->getMessage());
+
 }
-}	
+*/
+$redirectUrl = "ticket_list.php?access=$user";
+header("Location: $redirectUrl");
+}catch (PDOException $e){
+	die("Query failed: " . $e->getMessage());
+}}	
 ?>
 
 
