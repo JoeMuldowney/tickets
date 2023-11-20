@@ -90,14 +90,6 @@ Prerequisites
 - Import Database Schema:
   - Import the SQL file `ticket.sql` into the "ticket" database.
 
-## MySQL User and Privileges Setup:
-- Open MySQL Command Line or MySQL Workbench.  
-  - Create a new MySQL user
-     - CREATE USER 'mis'@'localhost' IDENTIFIED BY 'Mysql123';
-
-  - Grant all privileges to the user for a specific database
-     - GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
-
 ## User Credentials:
 - User Accounts:
   - Two pre-configured login names are available:
