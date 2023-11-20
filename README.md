@@ -74,6 +74,7 @@ Open the XAMPP Control Panel, navigate to Apache, and edit the php.ini file. Loc
 
 Microsoft Access Database Engine:
 Download and install the Microsoft Access Database Engine 2016 Redistributable from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
+
 Database Setup
 Create MySQL Database:
 In PHPAdmin, create a new database named "ticket."
@@ -82,17 +83,23 @@ Import Database Schema:
 Import the SQL file ticket.sql into the "ticket" database.
 
 Open MySQL Command Line or MySQL Workbench.
+
 -- Create a new MySQL user
+
 CREATE USER 'mis'@'localhost' IDENTIFIED BY 'Mysql123';
 
 -- Grant all privileges to the user for a specific database
+
 GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
 
 Move Access Database File:
+
 Move the file users.accdb to the folder C:\xampp\cgi-bin.
 
 User Credentials
+
 User Accounts:
+
 Two pre-configured login names are available:
 "muldowneyj" with admin rights.
 "testuser" with user rights.
