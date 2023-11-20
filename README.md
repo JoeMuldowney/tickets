@@ -94,13 +94,14 @@ Prerequisites
   -- Grant all privileges to the user for a specific database
   GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
 
-  Move Access Database File:
+## Move Access Database File:
 Move the file users.accdb to the folder C:\xampp\cgi-bin.
-User Credentials:
-User Accounts:
-Two pre-configured login names are available:
-"muldowneyj" with admin rights.
-"testuser" with user rights.
+
+## User Credentials:
+- User Accounts:
+  - Two pre-configured login names are available:
+      - "muldowneyj" with admin rights.
+      - "testuser" with user rights.
 
 
 
