@@ -68,19 +68,21 @@ At the outset of this project, I faced the challenge of having limited prior kno
 Prerequisites
 
 1. **XAMPP Installation:**
-   -Download and install XAMPP, which includes PHP version 8.0.28, Apache, and MySQL. You can find the download link [here](https://www.apachefriends.org/download.html).
+   -Download and install XAMPP, which includes PHP version 8.0.28, Apache, and MySQL.
+   -You can find the download link [here](https://www.apachefriends.org/download.html).
 
-2. **Configure Apache for PDO Connections:**
-   -Open the XAMPP Control Panel, navigate to Apache, and edit the php.ini file. Locate the line ;extension=pdo_odbc and remove the semicolon. Save the changes and restart Apache.
+3. **Configure Apache for PDO Connections:**
+   -Open the XAMPP Control Panel, navigate to Apache, and edit the php.ini file.
+   Locate the line ;extension=pdo_odbc and remove the semicolon. Save the changes and restart Apache.
 
-3. **Microsoft Access Database Engine:**
-Download and install the Microsoft Access Database Engine 2016 Redistributable from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
+5. **Microsoft Access Database Engine:**
+   -Download and install the Microsoft Access Database Engine 2016 Redistributable from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
 
-4. **Database Setup:**
+6. **Database Setup:**
    -Create MySQL Database:
-In PHPAdmin, create a new database named "ticket."
+       -In PHPAdmin, create a new database named "ticket."
 
-Import Database Schema:
+7. **Import Database Schema:**
 Import the SQL file ticket.sql into the "ticket" database.
 
 Open MySQL Command Line or MySQL Workbench.
