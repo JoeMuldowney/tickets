@@ -65,10 +65,11 @@ At the outset of this project, I faced the challenge of having limited prior kno
 
 # Usage
 
-To run you will need to downlaod Xammp with PHP version 8.0.28, apache, and MySQL [here](https://www.apachefriends.org/download.html).  Configure apache in xampp control panel to allow pdo connections.  
+To run you will need to downlaod Xammp with PHP version 8.0.28, apache, and MySQL [here](https://www.apachefriends.org/download.html).  Configure apache in xampp control panel to allow pdo connections by selecting the  PHP.ini.  Remove the semi colon before extension=pdo_odbc.  You will have to save and restart apache.
 Download Microsift Access Database Engine 2016 Redistrutable [here](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
-Under new database in PHPAdmin import file [Add Database import here].
-Have a Microsoft Access Database that has username.  I created a sample database with two usernames here [add Microsift database here]  
+Create new database in PHPAdmin called "ticket" and import the file ticket.sql.
+Move the file users.accdb to the folder C:\xampp\cgi-bin.  
+The two login names are "muldowneyj" with admin rights and "testuser" with user rights.
    
 
 
