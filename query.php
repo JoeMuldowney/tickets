@@ -1,8 +1,8 @@
 <?php
 
 $serverName = "localhost";
-$userName = "mis";
-$password = "Mysql123";
+$userName = "root";
+$password = "";
 $dbName = "ticket";
 
 $con = mysqli_connect($serverName, $userName, $password, $dbName);
