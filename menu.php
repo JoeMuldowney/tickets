@@ -9,7 +9,7 @@ $databasePath = 'C:\xampp\cgi-bin\users.accdb';
 
 $db = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=$databasePath;");
 	
-$query = "SELECT Login_ID, Rights_inv FROM SECURITY_USERS WHERE Login_ID = :UserName";
+$query = "SELECT Login_ID FROM SECURITY_USERS WHERE Login_ID = :UserName";
 
 $stmt = $db->prepare($query);
 
