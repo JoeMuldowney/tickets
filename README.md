@@ -67,45 +67,32 @@ At the outset of this project, I faced the challenge of having limited prior kno
 
 Prerequisites
 
-1. **XAMPP Installation:**
-   -Download and install XAMPP, which includes PHP version 8.0.28, Apache, and MySQL.
-   -You can find the download link [here](https://www.apachefriends.org/download.html).
+## XAMPP Installation:
+- Download and install XAMPP, which includes PHP version 8.0.28, Apache, and MySQL.
+- You can find the download link [here](https://www.apachefriends.org/download.html).
 
-3. **Configure Apache for PDO Connections:**
-   -Open the XAMPP Control Panel, navigate to Apache, and edit the php.ini file.
-   Locate the line ;extension=pdo_odbc and remove the semicolon. Save the changes and restart Apache.
+## Configure Apache for PDO Connections:
+- Open the XAMPP Control Panel, navigate to Apache, and edit the `php.ini` file. Locate the line `;extension=pdo_odbc` and remove the semicolon. Save the changes and restart Apache.
 
-5. **Microsoft Access Database Engine:**
-   -Download and install the Microsoft Access Database Engine 2016 Redistributable from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
+## Microsoft Access Database Engine:
+- Download and install the Microsoft Access Database Engine 2016 Redistributable from [this link](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
 
-6. **Database Setup:**
-   -Create MySQL Database:
-       -In PHPAdmin, create a new database named "ticket."
+## Database Setup:
+- Create MySQL Database:
+  - In PHPAdmin, create a new database named "ticket."
+- Import Database Schema:
+  - Import the SQL file `ticket.sql` into the "ticket" database.
 
-7. **Import Database Schema:**
-Import the SQL file ticket.sql into the "ticket" database.
+## MySQL User and Privileges Setup:
+- Open MySQL Command Line or MySQL Workbench.
+- Run the following queries to create a new user ('mis' in this example) and grant all privileges to a specific database ('your_database'). Replace `'Mysql123'` with the desired password:
 
-Open MySQL Command Line or MySQL Workbench.
+  
+  -- Create a new MySQL user
+  CREATE USER 'mis'@'localhost' IDENTIFIED BY 'Mysql123';
 
--- Create a new MySQL user
-
-CREATE USER 'mis'@'localhost' IDENTIFIED BY 'Mysql123';
-
--- Grant all privileges to the user for a specific database
-
-GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
-
-Move Access Database File:
-
-Move the file users.accdb to the folder C:\xampp\cgi-bin.
-
-User Credentials
-
-User Accounts:
-
-Two pre-configured login names are available:
-"muldowneyj" with admin rights.
-"testuser" with user rights.
+  -- Grant all privileges to the user for a specific database
+  GRANT ALL PRIVILEGES ON your_database.* TO 'mis'@'localhost';
 
 
 
