@@ -5,7 +5,7 @@ $user = $_POST['UserName'];
 	
 try{
 
-$databasePath = 'I:\cgi-bin\users.mdb';
+$databasePath = 'C:\xampp\cgi-bin\users.accdb';
 
 $db = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=$databasePath;");
 	
