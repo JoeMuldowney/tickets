@@ -5,7 +5,7 @@ Additionally, this system served as a robust tracking tool for efficient issue r
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
-- [Usage](#usage)
+- [Version Notes](#Version)
 
 
 
@@ -62,6 +62,11 @@ At the outset of this project, I faced the challenge of having limited prior kno
    - **Efficient Communication:**
      - Enhances communication efficiency between users and the ticketing system, reducing the need for manual follow-ups.
 
+#Version
+
+   - moved all of the database tables to MySql.
+   - incorporated a username and encrpted password to log in.
+   - 2 step authorization to reset a password by receiving a pin to the users email.  
 
 
 
