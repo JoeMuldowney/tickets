@@ -63,38 +63,7 @@ At the outset of this project, I faced the challenge of having limited prior kno
      - Enhances communication efficiency between users and the ticketing system, reducing the need for manual follow-ups.
 
 
-# Usage
 
-Prerequisites
-
-## XAMPP Installation:
-- Download and install XAMPP, which includes PHP version 8.0.28, Apache, and MySQL.
-- You can find the download link [here](https://www.apachefriends.org/download.html).
-
-## Configure Apache for PDO Connections:
-- Open the XAMPP Control Panel, navigate to Apache, and edit the `php.ini` file. Locate the line `;extension=pdo_odbc` and remove the semicolon. Save the changes and restart Apache.
-
-## Microsoft Access Database Engine:
-- Download and install the Microsoft Access Database Engine 2016 Redistributable from [this link](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
-
-## File System Setup
-  - Download as a zip file and extract to C:\xampp\htdocs\applications\
-  - Rename tickets-master to "tickets"
-
-## Move Access Database File:
-- Move the MS acess database file users.accdb to the folder C:\xampp\cgi-bin.
-
-## Database Setup:
-- Create MySQL Database:
-  - In PHPAdmin, create a new database named "ticket."
-- Import Database Schema:
-  - Import the SQL file `ticket.sql` into the "ticket" database.
-
-## User Credentials:
-- User Accounts:
-  - Two pre-configured login names are available:
-      - "muldowneyj" with admin rights.
-      - "testuser" with user rights.
 
 
 
