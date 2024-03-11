@@ -2,41 +2,33 @@
 <?php
 
 $user = $_POST['UserName'];
+$pass = $_POST['Password'];
 	
-try{
+require_once "query.php";
 
-$databasePath = 'C:\xampp\cgi-bin\users.accdb';
 
-$db = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=$databasePath;");
+    $stmt = $con->prepare("SELECT Email, Password, Auth FROM login WHERE Email = ?");
+	// Bind the parameter
+	$stmt->bind_param("s", $user);
+
+	// Execute the statement
+	$stmt->execute();	
+	$result = $stmt->get_result();
 	
-$query = "SELECT Login_ID FROM SECURITY_USERS WHERE Login_ID = :UserName";
-
-$stmt = $db->prepare($query);
-
-$stmt->bindParam(':UserName', $user);		   
-    
-$stmt->execute();
-     
-$results = $stmt->fetch(PDO::FETCH_ASSOC);
-	
+$row = mysqli_fetch_assoc($result);
 
 
-if($results != false){
+if($user == $row['Email'] && password_verify($pass, $row['Password'])){
 	
 $redirectURL = "../tickets/ticket_list.php?access=$user";
 header('Location: ' . $redirectURL);
+exit();
 
 }
-
 else{	
 	$redirectURL = "http://sccintranet/wordpress/";	
-	header('Location: ' . $redirectURL);	
-}
-$db = null;
-$stmt = null;
-
-}catch (PDOException $e) {
-    die("Query failed: " . $e->getMessage());
+	header('Location: ' . $redirectURL);
+	exit();	
 }
 
 ?>

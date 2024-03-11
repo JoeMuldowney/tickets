@@ -32,8 +32,9 @@ $user = $_GET['access'];
 
 
   <input type="hidden" name="access" value = "<?php echo $user ?>">  
-  <input type="hidden" name="User_Updated"  value="<?php echo $user?>">  
-    
+  <input type="hidden" name="User_Updated"  value="<?php echo $user?>">
+  <input type="hidden" name="UserCreated"  value="<?php echo $row['UserOpen']?>">  
+  
   <input type="hidden" name="new_ticket"  value="<?php echo $new_ticket?>">
   <input type="hidden" name="ticket_num"  value="<?php echo $ticketId?>">
     

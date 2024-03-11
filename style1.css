@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
 .flexing{
 	display: flex;
 }
@@ -16,8 +17,62 @@ body{
     max-width: 1850px;
     width: 95%;
 	padding-top: 5px;
-	font-size: 20px;
-	
+	font-size: 20px;	
+}
+.grid-item-titles {
+    border: 1px solid #ddd;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titlelocation {
+    border: 1px solid #ddd;
+    width: 101px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titlecat {
+    border: 1px solid #ddd;
+    width: 175px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titleticket {
+    border: 1px solid #ddd;
+    width: 158px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titledate {
+    border: 1px solid #ddd;
+    width: 140px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titlestatus {
+    border: 1px solid #ddd;
+    width: 150px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titleprior {
+    border: 1px solid #ddd;
+    width: 100px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.grid-item-titleuser {
+    border: 1px solid #ddd;
+    width: 350px;
+    text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
 }
 .container-list {
 	
@@ -31,6 +86,49 @@ body{
 }
 .grid-item-list {
     border: 1px solid #ddd;
+    width: 200px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-date {
+    border: 1px solid #ddd;
+    width: 140px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-ticket {
+    border: 1px solid #ddd;
+    width: 158px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-status {
+    border: 1px solid #ddd;
+    width: 150px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-prior {
+    border: 1px solid #ddd;
+    width: 100px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-cat {
+    border: 1px solid #ddd;
+    width: 175px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-user {
+    border: 1px solid #ddd;
+    width: 350px;
+    text-align: center;
+	cursor: pointer;
+}
+.grid-item-location {
+    border: 1px solid #ddd;
+    width: 101px;
     text-align: center;
 	cursor: pointer;
 }
@@ -42,12 +140,7 @@ body{
 	font-size: 17px;
 
 }
-.grid-item-titles {
-    border: 1px solid #ddd;
-    text-align: center;
-	cursor: pointer;
-	background-color: lightgray;
-}
+
 .dash{
 	top: 50px;
 	display: flex;
@@ -67,9 +160,6 @@ body{
 }
 .buttons-list input{
 	margin: 25px;
-}
-.search{
-	
 }
 
 .buttons{

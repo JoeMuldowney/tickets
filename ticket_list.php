@@ -66,25 +66,25 @@ $user = $_GET['access'];
 
 
 <div class="container-list-names">  
-<div class="grid-item-titles" title="ticket number">Ticket</div>
+<div class="grid-item-titleticket" title="ticket number">Ticket</div>
 
-<div class="grid-item-titles" title="Opened date">Date Opened</div> 
+<div class="grid-item-titledate" title="Opened date">Date Opened</div> 
 
-<div class="grid-item-titles"title="ticket status">Status</div> 
+<div class="grid-item-titlestatus"title="ticket status">Status</div> 
 
-<div class="grid-item-titles"title="Opened by">User Name</div> 
+<div class="grid-item-titleuser"title="Opened by">User Name</div> 
 
-<div class="grid-item-titles"title="Kind of device">Category</div> 
+<div class="grid-item-titlecat"title="Kind of device">Category</div> 
      
-<div class="grid-item-titles"title="location">Location</div> 
+<div class="grid-item-titlelocation"title="location">Location</div> 
 
-<div class="grid-item-titles"title="ticket priority">Priority</div> 
+<div class="grid-item-titleprior"title="ticket priority">Priority</div> 
 
-<div class="grid-item-titles"title="updated date">Updated</div> 
+<div class="grid-item-titledate"title="updated date">Updated</div> 
 
-<div class="grid-item-titles"title="updated by">Assigned</div> 
+<div class="grid-item-titleuser"title="updated by">Assigned</div> 
 
-<div class="grid-item-titles"title="ticket status">Closed</div> 
+<div class="grid-item-titledate"title="ticket status">Closed</div> 
 </div> 
 
        
@@ -99,7 +99,7 @@ $user = $_GET['access'];
 
 try{
 	
-	if($user == 'muldowneyj' || $user == 'wagonerf' || $user == 'buitront'){
+	if($user == 'joe.muldowney@sccmail.org' || $user == 'frank.wagoner@sccmail.org' || $user == 'trevor.buitron@sccmail.org'){
 	require_once('query.php');
 
     $sql = "SELECT Id, DateOpen, UserOpen, Category, Status, Location, Priority, UserUpdate, DateUpdate, DateClose FROM ticketinfo";
@@ -136,16 +136,16 @@ while($row = mysqli_fetch_assoc($result)){
 ?>
  
 <div class="content">
-	<div class="grid-item-list" onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Id'];?></div>
-	<div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php  echo $row['DateOpen']; ?></div>
-	<div class="grid-item-list" onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Status']; ?></div>
-	<div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['UserOpen'];?></div>
-	<div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Category'];?></div>
-	<div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Location']; ?></div>
-    <div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Priority'];?></div>	
-	<div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['DateUpdate'];?></div>		
-    <div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['UserUpdate'];?></div>		 
-	<div class="grid-item-list"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['DateClose'];?></div>
+	<div class="grid-item-ticket"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Id'];?></div>
+	<div class="grid-item-date"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php  echo $row['DateOpen']; ?></div>
+	<div class="grid-item-status"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Status']; ?></div>
+	<div class="grid-item-user"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['UserOpen'];?></div>
+	<div class="grid-item-cat"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Category'];?></div>
+	<div class="grid-item-location"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Location']; ?></div>
+    <div class="grid-item-prior"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['Priority'];?></div>	
+	<div class="grid-item-date"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['DateUpdate'];?></div>		
+    <div class="grid-item-user"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['UserUpdate'];?></div>		 
+	<div class="grid-item-date"onclick="window.location.href = 'ticket.php?access=<?php echo $user ?>&ticket_num=<?php echo $row['Id']?>'"><?php echo $row['DateClose'];?></div>
 	</div> 
 <?php
 }

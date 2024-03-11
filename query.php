@@ -1,8 +1,8 @@
 <?php
 
 $serverName = "localhost";
-$userName = "root";
-$password = "";
+$userName = getenv("DB_USERNAME"); 
+$password = getenv("DB_PASSWORD");
 $dbName = "ticket";
 
 $con = mysqli_connect($serverName, $userName, $password, $dbName);
