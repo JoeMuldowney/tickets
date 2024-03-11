@@ -64,9 +64,12 @@ At the outset of this project, I faced the challenge of having limited prior kno
 
 # Version
 
-   - moved all of the database tables to MySql.
-   - incorporated a username and encrpted password to log in.
-   - 2 step authorization to reset a password by receiving a pin to the users email.  
+1. Migration of all of the database tables to MySql.
+   - created a new table for creditials
+3. Implementation  of a username with encrypted password.
+   - Utilized up-to-date password encryption methods to enhance user account security.
+5. Two-step authorization to process password resets.
+   - Implemented a two-step authorization process where users receive an email containing a PIN to reset their password.
 
 
 
